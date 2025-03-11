@@ -1,11 +1,11 @@
 from gpt4all import GPT4All
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
-import os
 
 
 
-model_path = r"C:\Users\phwec\OneDrive\Code\line_detection\chatgpt_code\gpt4all_website\gpt4all-falcon-newbpe-q4_0.gguf" 
+
+model_path = "Llama-3.2-1B-Instruct-Q4_0.gguf" 
 gpt_model = GPT4All(model_path)
 
 app = Flask(__name__, static_folder="static")  # Serve static files from "static" folder
